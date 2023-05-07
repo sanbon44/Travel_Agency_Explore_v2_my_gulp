@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency - Explore</title>
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+    <!-- основной файл стилей -->
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <main class="main">
+            <header id="home" class="main__header header">
+                <div class="header__container container">
+                    <div class="header__wrap">
+                        <div class="header__logo">Explore</div>
+                        <nav class="header__nav nav">
+                            <ul class="nav__list">
+                                <li class="nav__item"><a href="#home">Home</a></li>
+                                <li class="nav__item"><a href="#tours">Tours</a></li>
+                                <li class="nav__item"><a href="#tours">Hotel</a></li>
+                                <li class="nav__item"><a href="#page">Gallery</a></li>
+                                <li class="nav__item"><a href="#page">Pages</a></li>
+                                <li class="nav__item"><a href="#page">Blog</a></li>
+                                <li class="nav__item"><a href="#page">Contact</a></li>
+                            </ul>
+                            <div class="header__sign sing">
+                                <a href="#" class="sign__login">Login</a>
+                                <a href="#" class="button sign__button">Sign UP</a>
+                                <div class="header__burger">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <section class="main__exploration exploration">
+                <div class="exploration__container container">
+                    <div class="exploration__wrap">
+                        <h1 data-watch data-watch-once class="exploration__title">It’s a Big World Out There, Go Explore</h1>
+                        <div data-watch data-watch-once class="exploration__text">Conveniently customize proactive web services for leveraged without continualliery aggregate fricctionle ou wellies richard.and very customize  continually.</div>
+                        <div class="exploration__button-wrap">
+                            <a href="#" class="button exploration__button exploration__button_yellow">Get Exploration </a>
+                            <a href="#" class="button exploration__button exploration__button_white">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="exploration__image"><img src="img/main/bg-5.jpg" alt="background"></div>
+            </section>
+        </main>
+        <div id="tours" class="book-now">
+            <div data-watch data-watch-once class="book-now__container container">
+                <div class="book-now__select-block select-block">
+                    <div class="select-block__column">
+                        <div class="select-block__hotel select-block__item active">
+                            <img src="img/book-now/hotel.svg" alt="Hotel">
+                            <p>Hotel</p>
+                        </div>
+                    </div>
+                    <div class="select-block__column">
+                        <div class="select-block__flight select-block__item">
+                            <img src="img/book-now/Flight.svg" alt="Flight">
+                            <p>Flight</p>
+                        </div>
+                    </div>
+                    <div class="select-block__column">
+                        <div class="select-block__car select-block__item">
+                            <img src="img/book-now/car.svg" alt="Car">
+                            <p>Car</p>
+                        </div>
+                    </div>
+                    <div class="select-block__column">
+                        <div class="select-block__ship select-block__item">
+                            <img src="img/book-now/Ship.svg" alt="Ship">
+                            <p>Ship</p>
+                        </div>
+                    </div>
+                </div>
+                <form action="#" method="get" class="book-now__hotel book-now__item-form hotel active">
+                    <div class="hotel__your-destination item-form__input-wrap hotel__input-wrap">
+                        <label>Your Destination</label>
+                        <select name="unittype" class="item-select" required>
+                            <option value="1" selected>Thailand</option>
+                            <option value="2">USA</option>
+                            <option value="3">China</option>
+                        </select>
+                    </div>
+                    <div class="hotel__check-in item-form__input-wrap hotel__input-wrap">
+                        <label>Check In</label>
+                        <input placeholder="02-20-22" name="check-in" class="item-form__input hotel__input" type="text" required>
+                    </div>
+                    <div class="hotel__check-out item-form__input-wrap hotel__input-wrap">
+                        <label>Check Out</label>
+                        <input placeholder="02-30-22" name="check-out" class="item-form__input hotel__input" type="text" required>
+                    </div>
+                    <div class="hotel__child item-form__input-wrap hotel__input-wrap">
+                        <label>Child</label>
+                        <input value="1" name="child" class="item-form__input hotel__input" type="number" required>
+                    </div>
+                    <div class="hotel__adult item-form__input-wrap hotel__input-wrap">
+                        <label>Adult</label>
+                        <input value="3" name="adult" class="item-form__input hotel__input" type="number" required>
+                    </div>
+                    
+                    <button class="hotel__sutmit button" type="submit">Book Now</button>
+                </form>
+                <form action="#" method="get" class="book-now__flight book-now__item-form flight">
+                    <div class="flight__your-destination item-form__input-wrap flight__input-wrap ">
+                        <label>Your Destination</label>
+                        <select name="unittype" class="item-select" required>
+                            <option value="1">USA</option>
+                            <option value="2">Thailand</option>
+                            <option value="3">China</option>
+                        </select>
+                    </div>
+                    <div class="flight__check-in item-form__input-wrap flight__input-wrap">
+                        <label>Check In</label>
+                        <input placeholder="01-26-22" name="check-in" class="item-form__input flight__input" type="text" required>
+                    </div>
+                    <div class="flight__check-out item-form__input-wrap flight__input-wrap">
+                        <label>Check Out</label>
+                        <input placeholder="01-30-22" name="check-out" class="item-form__input flight__input" type="text" required>
+                    </div>
+                    <div class="flight__child item-form__input-wrap flight__input-wrap">
+                        <label>Child</label>
+                        <input placeholder="5" value="2" name="child" class="item-form__input flight__input" type="number" required>
+                    </div>
+                    <div class="flight__adult item-form__input-wrap flight__input-wrap">
+                        <label>Adult</label>
+                        <input value="3" name="adult" class="item-form__input flight__input" type="number" required>
+                    </div>
+                    
+                    <button class="flight__sutmit button" type="submit">Book Now</button>
+                </form>
+                <form action="#" method="get" class="book-now__car book-now__item-form car">
+                    <div class="car__your-destination item-form__input-wrap car__input-wrap ">
+                        <label>Your Destination</label>
+                        <select name="unittype" class="item-select" required>
+                            <option value="1">China</option>
+                            <option value="2">Thailand</option>
+                            <option value="3">USA</option>
+                        </select>
+                    </div>
+                    <div class="car__check-in item-form__input-wrap car__input-wrap">
+                        <label>Check In</label>
+                        <input placeholder="10-25-22" name="check-in" class="item-form__input car__input" type="text" required>
+                    </div>
+                    <div class="car__check-out item-form__input-wrap car__input-wrap">
+                        <label>Check Out</label>
+                        <input placeholder="11-10-22" name="check-out" class="item-form__input car__input" type="text" required>
+                    </div>
+                    <div class="car__child item-form__input-wrap car__input-wrap">
+                        <label>Child</label>
+                        <input value="1" name="child" class="item-form__input car__input" type="number" required>
+                    </div>
+                    <div class="car__adult item-form__input-wrap car__input-wrap">
+                        <label>Adult</label>
+                        <input value="2" name="adult" class="item-form__input car__input" type="number" required>
+                    </div>
+                    <button class="car__sutmit button" type="submit">Book Now</button>
+                </form>
+                <form action="#" method="get" class="book-now__ship book-now__item-form ship">
+                    <div class="ship__your-destination item-form__input-wrap ship__input-wrap ">
+                        <label>Your Destination</label>
+                        <select name="unittype" class="item-select" required>
+                            <option value="1">France</option>
+                            <option value="2">Thailand</option>
+                            <option value="3">USA</option>
+                            <option value="4">China</option>
+                        </select>
+                    </div>
+                    <div class="ship__check-in item-form__input-wrap ship__input-wrap">
+                        <label>Check In</label>
+                        <input placeholder="05-15-22" name="check-in" class="item-form__input ship__input" type="text" required>
+                    </div>
+                    <div class="ship__check-out item-form__input-wrap ship__input-wrap">
+                        <label>Check Out</label>
+                        <input placeholder="05-29-22" name="check-out" class="item-form__input ship__input" type="text" required>
+                    </div>
+                    <div class="ship__child item-form__input-wrap ship__input-wrap">
+                        <label>Child</label>
+                        <input value="5" name="child" class="item-form__input ship__input" type="number" required>
+                    </div>
+                    <div class="ship__adult item-form__input-wrap shipr__input-wrap">
+                        <label>Adult</label>
+                        <input value="4" name="adult" class="item-form__input ship__input" type="number" required>
+                    </div>
+                    <button class="ship__sutmit button" type="submit">Book Now</button>
+                </form>
+            </div>
+        </div>
+        <section id="page" class="travel">
+            <div class="travel__container container">
+                <div class="travel__main-title">Travel</div>
+                <div id="page" class="travel__block-wrap">
+                    <div class="travel__block-image">
+                        <div class="travel__image-body">
+                            <div class="travel__image-top">
+                                <img src="img/travel/top.jpg" alt="travel" class="travel__img-top">
+                            </div>
+                            <div class="travel__image-bottom">
+                                <img src="img/travel/bottom.jpg" alt="travel" class="travel__img-bottom">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="travel__block-text">
+                        <div class="travel__label">About us</div>
+                        <div class="travel__title">World Best Travel Agency Company Since 2008.</div>
+                        <div class="travel__text">Continually productize compelling quality for packed with  elated
+                            productize compelling quality for packed in  with all elated Them
+                            Setting up to website and creating pages.
+                            </div>
+                        <ul class="travel__list">
+                            <li><i class="fa-regular fa-square-check"></i>We providing compe quality for packed with elated different.</li>
+                            <li><i class="fa-regular fa-square-check"></i>We are one of compelling quality for packed with leading.</li>
+                            <li><i class="fa-regular fa-square-check"></i>Learn how compelling quality for packed with  elated grow.</li>
+                        </ul>
+                        <div class="travel__card-wrap">
+                            <div class="travel__card-item">
+                                <div class="travel__card-title">20+</div>
+                                <div class="travel__card-text">Year<br>
+                                    Experience</div>
+                            </div>
+                            <div class="travel__card-item">
+                                <div class="travel__card-title">250+</div>
+                                <div class="travel__card-text">Destination<br>
+                                    Collaboratin</div>
+                            </div>
+                            <div class="travel__card-item">
+                                <div class="travel__card-title">170K+</div>
+                                <div class="travel__card-text">Happy<br>
+                                    Customers</div>
+                            </div>
+                        </div>
+                        <a href="#" class="button travel__button">Read More</a>
+                    </div>
+                </div>
+                <div class="travel__oasis">
+                    <img src="img/travel/decor.jpg" alt="оазис">
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    
+    <!-- библиотека JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <!-- файл слайдера -->
+    <script src="slick-slider/slick.min.js"></script>
+    <script src="https://kitd.fontawesome.com/eaf5f1e30d.js" crossorigin="anonymous"></script>
+    <!-- основной файл JS -->
+    <!-- <script src="js/lib_fls_js/_select.js"></script> -->
+    <!-- <script src="js/lib_fls_js/_watcher.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
+</html>
